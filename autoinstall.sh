@@ -13,3 +13,9 @@ rm -rf "$TEMP_DIR"
 
 # installing paru packages
 paru -S zen-browser
+
+# greetd config
+if [ -f "/etc/greetd/config.toml" ]; then
+    sudo cp {{ .chezmoi.sourceDir }}/path/to/your/config.toml /etc/greetd/config.toml
+    sudo systemctl restart greetd
+fi
