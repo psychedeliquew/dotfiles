@@ -2,9 +2,8 @@ return {
   {
     "rebelot/kanagawa.nvim",
     priority = 1000,
-    opts = {
-      theme = "wave",
-      transparent = false,
-    },
+    config = function()
+      vim.cmd.colorscheme("kanagawa")
+    end,
   },
 }
