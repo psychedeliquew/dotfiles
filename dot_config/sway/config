@@ -67,7 +67,7 @@ default_floating_border pixel 3
 smart_borders off
 smart_gaps off
 
-# Colors (Nord-inspired Minimalist Palette)
+# Colors
 set $bg_color #2e3440
 set $inactive_bg #3b4252
 set $text_color #eceff4
