@@ -2,7 +2,7 @@
 
 # installing core packages
 sudo pacman -Syu
-sudo pacman -S --needed --noconfigm sway waybar fuzzel mako kitty nwg-look qt5ct qt6ct btop steam discord base-devel git
+sudo pacman -S --needed --noconfirm sway waybar fuzzel mako kitty nwg-look qt5ct qt6ct btop steam discord base-devel git
 
 # installing paru
 TEMP_DIR=$(mktemp -d)
