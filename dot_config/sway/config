@@ -206,7 +206,7 @@ bindsym $mod+r mode "resize"
     # Special key to take a screenshot with grim
     bindsym Print exec grim
 #status bar
-exec waybar
+exec_always waybar
 exec_always autotiling
 include /etc/sway/config.d/*
 include ~/.config/sway/outputs
