@@ -64,8 +64,8 @@ gaps outer 5
 # Window Decorations
 default_border pixel 3
 default_floating_border pixel 3
-smart_borders on
-smart_gaps on
+smart_borders off
+smart_gaps off
 
 # Colors (Nord-inspired Minimalist Palette)
 set $bg_color #2e3440
