@@ -8,7 +8,7 @@
     "spacing": 4,
     "modules-left": ["sway/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["pipewire"],
+    "modules-right": ["pulseaudio"],
 
     "sway/workspaces": {
         "disable-scroll": true,
@@ -21,7 +21,7 @@
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
 
-    "pipewire": {
+    "pulseaudio": {
         "format": "{icon} {volume}%",
         "format-muted": "󰝟 Muted",
         "format-icons": {
