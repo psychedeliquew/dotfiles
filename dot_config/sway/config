@@ -213,3 +213,4 @@ bindsym $mod+r mode "resize"
 #status bar
 exec waybar
 include /etc/sway/config.d/*
+include ~/.config/sway/outputs
