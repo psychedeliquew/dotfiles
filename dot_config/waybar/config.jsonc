@@ -27,6 +27,6 @@
         "format-icons": {
             "default": ["󰕿", "󰖀", "󰕾"]
         },
-        "on-click": "env GTK_THEME=Adwaita:dark pavucontrol"
+        "on-click": "pavucontrol"
     }
 }
