@@ -12,10 +12,10 @@ makepkg -si --noconfirm
 rm -rf "$TEMP_DIR"
 
 # installing paru packages
-paru -S zen-browser
+paru -S zen-browser ttf-jetbrains-mono-nerd
 
 # greetd config
 if [ -f "/etc/greetd/config.toml" ]; then
-    sudo cp {{ .chezmoi.sourceDir }}/path/to/your/config.toml /etc/greetd/config.toml
-    sudo systemctl restart greetd
+  sudo cp {{ .chezmoi.sourceDir }}/path/to/your/config.toml /etc/greetd/config.toml
+  sudo systemctl restart greetd
 fi
