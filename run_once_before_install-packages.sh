@@ -19,9 +19,11 @@ fi
 
 paru -S --noconfirm zen-browser-bin ttf-jetbrains-mono-nerd
 
-if [ -f "/etc/greetd/config.toml" ]; then
-  sudo cp ~/.config/greetd/config.toml /etc/greetd/config.toml
-  sudo systemctl enable --now greetd
+if [ -f "$HOME/.config/greetd/config.toml" ]; then
+    sudo mkdir -p /etc/greetd
+    sudo cp "$HOME/.config/greetd/config.toml" /etc/greetd/config.toml
+    sudo systemctl daemon-reload
+    sudo systemctl enable --now greetd
 fi
 
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
