@@ -29,5 +29,6 @@ if [ ! -d "$HOME/.oh-my-zsh" ]; then
 fi
 
 if ! command -v oh-my-posh &>/dev/null; then
+  mkdir -p ~/.local/bin
   curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/.local/bin
 fi
