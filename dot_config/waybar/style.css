@@ -11,8 +11,8 @@ window#waybar {
 }
 
 #workspaces, #clock, #pulseaudio {
-    background: #282828;
-    color: #dfbf8e;
+    background: #181616;
+    color: #c5c9c5;
     padding: 0px 15px;
     border-radius: 12px;
     margin: 4px 0px;
@@ -20,27 +20,27 @@ window#waybar {
 
 #workspaces button {
     padding: 0px 5px;
-    color: #928374;
+    color: #727169;
     background: transparent;
 }
 
 #workspaces button.focused {
-    color: #a9b665;
-    border-bottom: 2px solid #a9b665;
+    color: #8ba4b1;
+    border-bottom: 2px solid #8ba4b1;
 }
 
 #workspaces button.urgent {
-    color: #ea6962;
+    color: #c4746e;
 }
 
 #clock {
-    color: #dfbf8e;
+    color: #c5c9c5;
 }
 
 #pulseaudio {
-    color: #dfbf8e;
+    color: #c5c9c5;
 }
 
 #pulseaudio.muted {
-    color: #ea6962;
+    color: #c4746e;
 }
