@@ -31,4 +31,5 @@ fi
 if ! command -v oh-my-posh &>/dev/null; then
   mkdir -p ~/.local/bin
   curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/.local/bin
+  export PATH="$HOME/.local/bin:$PATH"
 fi
