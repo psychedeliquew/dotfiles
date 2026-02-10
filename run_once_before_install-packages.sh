@@ -42,3 +42,13 @@ if [ -f "/etc/greetd/config.toml" ]; then
   sudo cp {{ .chezmoi.sourceDir }}/path/to/your/config.toml /etc/greetd/config.toml
   sudo systemctl restart greetd
 fi
+
+# install oh-my-zsh
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+fi
+
+# install oh my posh
+if ! command -v oh-my-posh &>/dev/null; then
+  curl -s https://ohmyposh.dev/install.sh | bash -s
+fi

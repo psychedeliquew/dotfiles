@@ -106,3 +106,6 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR="kitty -e nvim"
 export VISUAL="kitty -e nvim"
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export PATH="$PATH:/home/vlad/.local/bin"
+
+eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/gruvbox.omp.json)"
