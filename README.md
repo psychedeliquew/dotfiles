@@ -1,1 +1,1 @@
-sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply vmx0
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply psychedeliquew
