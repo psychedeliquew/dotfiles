@@ -20,7 +20,6 @@ fi
 paru -S --noconfirm zen-browser-bin ttf-jetbrains-mono-nerd
 
 if [ -f "/etc/greetd/config.toml" ]; then
-  # Use the actual source path provided by chezmoi
   sudo cp ~/.config/greetd/config.toml /etc/greetd/config.toml
   sudo systemctl enable --now greetd
 fi
