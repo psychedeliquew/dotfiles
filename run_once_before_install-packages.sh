@@ -17,7 +17,7 @@ if ! command -v paru &>/dev/null; then
   cd -
 fi
 
-paru -S --noconfirm zen-browser-bin ttf-jetbrains-mono-nerd faugus-launcher wowup-cf-bin
+paru -S --noconfirm zen-browser-bin ttf-jetbrains-mono-nerd
 
 if [ -f "/etc/greetd/config.toml" ]; then
   # Use the actual source path provided by chezmoi
