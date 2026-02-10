@@ -8,7 +8,7 @@ set $term kitty
 set $menu fuzzel
 
 # Default wallpaper:
-output * bg ~/Pictures/Wallpapers/bay.JPG fill
+output * bg ~/Pictures/Wallpapers/road-3.jpg fill
 
 # Idle configuration:
 exec swayidle -w \
