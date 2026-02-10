@@ -151,9 +151,6 @@ bindsym $mod+r mode "resize"
     # Special key to take a screenshot with grim
     bindsym $mod+Shift+s exec grim -g "$(slurp)" - | wl-copy
 
-# Status bar:
-exec_always pkill autotiling; autotiling
-
 bar {
   swaybar_command waybar
 }
@@ -163,3 +160,6 @@ include /etc/sway/config.d/*
 
 # Monitors:
 include ~/.config/sway/outputs
+
+# Auto tiling
+exec_always "pkill autotiling; sleep 1; autotiling"
