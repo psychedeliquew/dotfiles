@@ -21,6 +21,7 @@ PACKAGES=(
   grim
   slurp
   wl-clipboard
+  zsh-syntax-highlighting
 )
 sudo pacman -Syu --needed --noconfirm "${PACKAGES[@]}"
 
