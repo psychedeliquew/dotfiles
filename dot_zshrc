@@ -105,5 +105,4 @@ source $ZSH/oh-my-zsh.sh
 #
 export EDITOR="kitty -e nvim"
 export VISUAL="kitty -e nvim"
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
