@@ -71,7 +71,7 @@ smart_gaps off
 set $bg_color #282828
 set $inactive_bg #3c3836
 set $text_color #dfbf8e
-set $accent_color #a9b665
+set $accent_color #928374
 set $urgent_color #ea6962
 
 # Target             Border          BG             Text          Indicator      Child_Border

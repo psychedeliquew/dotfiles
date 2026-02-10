@@ -10,38 +10,37 @@ window#waybar {
     background: transparent;
 }
 
-#workspaces, #clock, #pipewire {
-    background: #1e1e2e;
-    color: #cdd6f4;
+#workspaces, #clock, #pulseaudio {
+    background: #282828;
+    color: #dfbf8e;
     padding: 0px 15px;
     border-radius: 12px;
     margin: 4px 0px;
 }
 
-/* Sway specific workspace styling */
 #workspaces button {
     padding: 0px 5px;
-    color: #585b70;
+    color: #928374;
     background: transparent;
 }
 
 #workspaces button.focused {
-    color: #89b4fa;
-    border-bottom: 2px solid #89b4fa;
+    color: #a9b665;
+    border-bottom: 2px solid #a9b665;
 }
 
 #workspaces button.urgent {
-    color: #f38ba8;
+    color: #ea6962;
 }
 
 #clock {
-    color: #cdd6f4;
+    color: #dfbf8e;
 }
 
-#pipewire {
-    color: #fab387;
+#pulseaudio {
+    color: #dfbf8e;
 }
 
-#pipewire.muted {
-    color: #f38ba8;
+#pulseaudio.muted {
+    color: #ea6962;
 }
