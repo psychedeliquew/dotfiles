@@ -1,10 +1,10 @@
 font=JetBrainsMono Nerd Font 12
-background-color=#282828ff
-text-color=#dfbf8eff
-border-color=#a9b665ff
+background-color=#181616ff
+text-color=#c5c9c5ff
+border-color=#8ba4b1ff
 border-size=1
 border-radius=0
-progress-color=over #a9b665ff
+progress-color=over #8ba4b1ff
 
 width=300
 height=100
@@ -17,5 +17,5 @@ markup=1
 actions=1
 
 [urgency=high]
-border-color=#ea6962ff
+border-color=#c4746eff
 default-timeout=0
