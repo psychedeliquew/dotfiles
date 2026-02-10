@@ -68,11 +68,11 @@ smart_borders off
 smart_gaps off
 
 # Colors
-set $bg_color #2e3440
-set $inactive_bg #3b4252
-set $text_color #eceff4
-set $accent_color #88c0d0
-set $urgent_color #bf616a
+set $bg_color #282828
+set $inactive_bg #3c3836
+set $text_color #dfbf8e
+set $accent_color #a9b665
+set $urgent_color #ea6962
 
 # Target             Border          BG             Text          Indicator      Child_Border
 client.focused       $accent_color   $accent_color  $bg_color     $accent_color  $accent_color
