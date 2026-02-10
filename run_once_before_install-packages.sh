@@ -21,7 +21,7 @@ paru -S --noconfirm zen-browser-bin ttf-jetbrains-mono-nerd faugus-launcher wowu
 
 if [ -f "/etc/greetd/config.toml" ]; then
   # Use the actual source path provided by chezmoi
-  sudo cp "{{ .chezmoi.sourceDir }}/dot_config/greetd/config.toml" /etc/greetd/config.toml
+  sudo cp "{{ .chezmoi.sourceDir }}/dot_config/greetd/config.toml.tmpl" /etc/greetd/config.toml
   sudo systemctl enable --now greetd
 fi
 
