@@ -24,7 +24,7 @@ fi
 paru -S --noconfirm zen-browser-bin ttf-jetbrains-mono-nerd
 
 # greetd config
-CONFIG_SRC="$CHEZMOI_SOURCE_DIR/home/.config/greetd/config.toml"
+CONFIG_SRC="{{ .chezmoi.sourceDir }}/home/.config/greetd/config.toml"
 CONFIG_DEST="/etc/greetd/config.toml"
 
 if [ -f "$CONFIG_SRC" ]; then
