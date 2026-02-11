@@ -4,8 +4,8 @@ set -e
 # pacman
 PACKAGES=(
   sway waybar fuzzel mako kitty nwg-look qt5ct qt6ct btop steam
-  discord base-devel git zsh nvim autotiling grim slurp
-  wl-clipboard zsh-syntax-highlighting winetricks protontricks
+  base-devel git zsh nvim autotiling grim slurp
+  wl-clipboard winetricks protontricks
   wine wine-mono greetd-tuigreet fastfetch
 )
 
@@ -17,6 +17,7 @@ if ! command -v paru &>/dev/null; then
   cd /tmp/paru
   makepkg -si --noconfirm
   cd -
+  rm -rf /tmp/paru
 fi
 
 # paru packages
