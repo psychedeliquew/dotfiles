@@ -61,7 +61,3 @@ fi
 
 # changeing shell to zsh
 chsh -s /bin/zsh
-
-echo "Setup complete. Rebooting now..."
-sync
-reboot
