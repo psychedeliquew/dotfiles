@@ -109,3 +109,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 export PATH="$PATH:/home/vlad/.local/bin"
 
 eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/gruvbox.omp.json)"
+
+if [[ ":$PATH:" != *":$HOME/.local/bin:"* ]]; then
+  export PATH="$HOME/.local/bin:$PATH"
+fi
