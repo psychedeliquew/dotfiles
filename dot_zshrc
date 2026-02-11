@@ -103,13 +103,18 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+
+# append $EDITOR and $VISUAL
 export EDITOR="kitty -e nvim"
 export VISUAL="kitty -e nvim"
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-export PATH="$PATH:/home/vlad/.local/bin"
 
+# enable syntax-highlighting
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# set oh-my-posh theme
 eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/gruvbox.omp.json)"
 
+# add ~/.local/bin if it's not created already
 if [[ ":$PATH:" != *":$HOME/.local/bin:"* ]]; then
   export PATH="$HOME/.local/bin:$PATH"
 fi
