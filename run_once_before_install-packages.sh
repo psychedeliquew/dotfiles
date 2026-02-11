@@ -54,6 +54,3 @@ fi
 
 # changeing shell to zsh
 chsh -s /bin/zsh
-
-# reboot
-reboot
