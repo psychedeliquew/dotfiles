@@ -6,7 +6,7 @@ PACKAGES=(
   sway waybar fuzzel mako kitty nwg-look qt5ct qt6ct btop steam
   base-devel git zsh nvim autotiling grim slurp
   wl-clipboard winetricks protontricks
-  wine wine-mono greetd-tuigreet fastfetch
+  wine wine-mono greetd-tuigreet fastfetch pavucontrol
 )
 
 sudo pacman -Syu --needed --noconfirm "${PACKAGES[@]}"
