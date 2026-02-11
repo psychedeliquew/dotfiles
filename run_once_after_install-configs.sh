@@ -2,8 +2,10 @@
 set -e
 
 # greetd config
-sudo mv ~/.config/greetd /etc/
-sudo systemctl enable greetd
+if [ -d "$HOME/.config/greetd" ]; then
+    sudo cp -r "$HOME/.config/greetd" /etc/greetd
+    sudo systemctl enable greetd
+fi
 
 ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
 
