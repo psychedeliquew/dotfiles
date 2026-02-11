@@ -23,27 +23,9 @@ fi
 # paru packages
 paru -S --noconfirm zen-browser-bin ttf-jetbrains-mono-nerd
 
-# greetd config
-sudo mv ~/.config/greetd /etc/
-sudo systemctl enable greetd
-
 # oh-my-zsh install
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc
-fi
-
-ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
-
-# zsh-syntax-highlighting
-if [ ! -d "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting" ]; then
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git \
-        "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting"
-fi
-
-# zsh-autosuggestions
-if [ ! -d "$ZSH_CUSTOM/plugins/zsh-autosuggestions" ]; then
-    git clone https://github.com/zsh-users/zsh-autosuggestions.git \
-        "$ZSH_CUSTOM/plugins/zsh-autosuggestions"
 fi
 
 # oh-my-posh install
@@ -51,6 +33,3 @@ if ! command -v oh-my-posh &>/dev/null; then
   mkdir -p ~/.local/bin
   curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/.local/bin
 fi
-
-# changeing shell to zsh
-chsh -s /bin/zsh
