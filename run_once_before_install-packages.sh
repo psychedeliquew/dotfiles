@@ -58,3 +58,10 @@ if ! command -v oh-my-posh &>/dev/null; then
   mkdir -p ~/.local/bin
   curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/.local/bin
 fi
+
+# changeing shell to zsh
+chsh -s /bin/zsh
+
+echo "Setup complete. Rebooting now..."
+sync
+reboot
