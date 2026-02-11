@@ -3,7 +3,7 @@ set -e
 
 # greetd config
 if [ -d "$HOME/.config/greetd" ]; then
-    sudo cp -r "$HOME/.config/greetd" /etc/greetd
+    sudo cp -r "$HOME/.config/greetd" /etc/
     sudo systemctl enable greetd
 fi
 
