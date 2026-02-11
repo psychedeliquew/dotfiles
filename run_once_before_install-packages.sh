@@ -24,15 +24,8 @@ fi
 paru -S --noconfirm zen-browser-bin ttf-jetbrains-mono-nerd
 
 # greetd config
-CONFIG_SRC="{{ .chezmoi.sourceDir }}/home/.config/greetd/config.toml"
-CONFIG_DEST="/etc/greetd/config.toml"
-
-if [ -f "$CONFIG_SRC" ]; then
-    sudo mkdir -p /etc/greetd
-    sudo cp "$CONFIG_SRC" "$CONFIG_DEST"
-    sudo systemctl daemon-reload
-    sudo systemctl enable --now greetd
-fi
+sudo mv ~/.config/greetd /etc/
+sudo systemctl enable greetd
 
 # oh-my-zsh install
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
@@ -61,3 +54,6 @@ fi
 
 # changeing shell to zsh
 chsh -s /bin/zsh
+
+# reboot
+reboot
