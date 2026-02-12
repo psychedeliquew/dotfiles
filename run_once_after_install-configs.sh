@@ -32,16 +32,6 @@ sudo systemctl enable ufw
 # bluetooth
 sudo systemctl enable bluetooth
 
-# editing kernel parameters in the EFI boot entry
-ROOT_UUID=$(blkid -s UUID -o value /dev/nvme0n1p2)
-
-sudo efibootmgr --create \
-  --disk /dev/nvme0n1 \
-  --part 1 \
-  --label "Arch Linux" \
-  --loader '\vmlinuz-linux' \
-  --unicode "root=UUID=$ROOT_UUID rw quiet nvidia-drm.modeset=1 initrd=\initramfs-linux.img"
-
 # changing shell to zsh
 chsh -s /bin/zsh
 
