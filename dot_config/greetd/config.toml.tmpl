@@ -5,5 +5,9 @@ vt = 7
 
 # The default session, also known as the greeter.
 [default_session]
-command = "tuigreet --time --remember --cmd 'sway --unsupported-gpu'"
+command = "tuigreet \
+  --time \
+  --theme 'border=#4c566a;text=#d8dee9;prompt=#a3be8c;time=#81a1c1;action=#88c0d0;button=#5e81ac;container=#2e3440;input=#b48ead' \
+  --remember \
+  --cmd 'sway --unsupported-gpu'"
 user = "greeter"
