@@ -29,6 +29,9 @@ sudo ufw default allow outgoing
 sudo ufw enable
 sudo systemctl enable ufw
 
+# bluetooth
+sudo systemctl enable bluetooth
+
 # changing shell to zsh
 chsh -s /bin/zsh
 
