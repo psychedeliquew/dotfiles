@@ -4,8 +4,8 @@ set -e
 # pacman
 PACKAGES=(
   sway waybar fuzzel mako kitty nwg-look qt5ct qt6ct btop steam
-  base-devel git zsh nvim autotiling grim slurp
-  wl-clipboard winetricks protontricks
+  base-devel git zsh nvim autotiling grim slurp polkit-gnome
+  wl-clipboard winetricks protontricks xdg-desktop-portal-wlr
   wine wine-mono greetd-tuigreet fastfetch pavucontrol ufw
 )
 
