@@ -9,7 +9,7 @@ PACKAGES=(
   wine wine-mono greetd-tuigreet fastfetch pavucontrol ufw \
   pipewire pipewire-pulse pipewire-alsa wireplumber libnotify \
   bluez bluez-utils blueman nvidia-open-dkms nvidia-utils \
-  lib32-nvidia-utils linux-headers swaybg
+  lib32-nvidia-utils linux-headers swaybg xorg-xwayland
 )
 
 sudo pacman -Syu --needed --noconfirm "${PACKAGES[@]}"
