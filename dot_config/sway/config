@@ -151,6 +151,7 @@ bindsym $mod+r mode "resize"
     # Special key to take a screenshot with grim
     bindsym $mod+Shift+s exec grim -g "$(slurp)" - | wl-copy
 
+# waybar
 bar {
   swaybar_command waybar
 }
@@ -163,3 +164,6 @@ include ~/.config/sway/outputs
 
 # Auto tiling
 exec_always "pkill autotiling; sleep 1; autotiling"
+
+# enable polkit-gnome
+exec_always --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
