@@ -35,7 +35,7 @@ sudo systemctl enable bluetooth
 # editing kernel parameters in the EFI boot entry
 ROOT_UUID=$(blkid -s UUID -o value /dev/nvme0n1p2)
 
-efibootmgr --create \
+sudo efibootmgr --create \
   --disk /dev/nvme0n1 \
   --part 1 \
   --label "Arch Linux" \
