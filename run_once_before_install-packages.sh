@@ -3,10 +3,13 @@ set -e
 
 # pacman
 PACKAGES=(
-  sway waybar fuzzel mako kitty nwg-look qt5ct qt6ct btop steam
-  base-devel git zsh nvim autotiling grim slurp polkit-gnome
-  wl-clipboard winetricks protontricks xdg-desktop-portal-wlr
-  wine wine-mono greetd-tuigreet fastfetch pavucontrol ufw
+  sway waybar fuzzel mako kitty nwg-look qt5ct qt6ct btop steam \
+  base-devel git zsh nvim autotiling grim slurp polkit-gnome \
+  wl-clipboard winetricks protontricks xdg-desktop-portal-wlr \
+  wine wine-mono greetd-tuigreet fastfetch pavucontrol ufw \
+  pipewire pipewire-pulse pipewire-alsa wireplumber libnotify \
+  bluez bluez-utils blueman nvidia-open-dkms nvidia-utils \
+  lib32-nvidia-utils linux-headers
 )
 
 sudo pacman -Syu --needed --noconfirm "${PACKAGES[@]}"
