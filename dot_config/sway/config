@@ -8,7 +8,7 @@ set $term kitty
 set $menu fuzzel
 
 # Default wallpaper:
-output * bg ~/Pictures/Wallpapers/road-3.jpg fill
+output * bg ~/Pictures/Wallpapers/gruv-kanji.png fill
 
 # Key bindings:
     # Start a terminal
