@@ -26,7 +26,7 @@ if ! command -v paru &>/dev/null; then
 fi
 
 # paru packages
-paru -S --noconfirm helium-browser-bin
+# paru -S --noconfirm helium-browser-bin
 
 # oh-my-zsh install
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
