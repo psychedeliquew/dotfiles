@@ -11,7 +11,7 @@ PACKAGES=(
   bluez bluez-utils blueman nvidia-open-dkms nvidia-utils \
   lib32-nvidia-utils linux-headers swaybg xorg-xwayland \
   noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-jetbrains-mono-nerd \
-  
+  flatpak xdg-desktop-portal
 )
 
 sudo pacman -Syu --needed --noconfirm "${PACKAGES[@]}"
@@ -24,6 +24,9 @@ if ! command -v paru &>/dev/null; then
   cd -
   rm -rf /tmp/paru
 fi
+
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install -y flathub com.github.tchx84.Flatseal app.zen_browser.zen
 
 # paru packages
 # paru -S --noconfirm helium-browser-bin
