@@ -16,8 +16,17 @@ PACKAGES=(
 
 sudo pacman -Syu --needed --noconfirm "${PACKAGES[@]}"
 
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install -y flathub com.github.tchx84.Flatseal net.waterfox.waterfox
+# paru install
+if ! command -v paru &>/dev/null; then
+  git clone https://aur.archlinux.org/paru.git /tmp/paru
+  cd /tmp/paru
+  makepkg -si --noconfirm
+  cd -
+  rm -rf /tmp/paru
+fi
+
+# paru packages
+paru -S --noconfirm waterfox-bin
 
 # oh-my-zsh install
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
