@@ -11,7 +11,7 @@ PACKAGES=(
   bluez bluez-utils blueman nvidia-open-dkms nvidia-utils \
   lib32-nvidia-utils linux-headers swaybg xorg-xwayland \
   noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-jetbrains-mono-nerd \
-  xdg-desktop-portal qbittorrent
+  xdg-desktop-portal qbittorrent tailscale
 )
 
 sudo pacman -Syu --needed --noconfirm "${PACKAGES[@]}"
@@ -26,7 +26,7 @@ if ! command -v paru &>/dev/null; then
 fi
 
 # paru packages
-paru -S --noconfirm waterfox-bin pcsx2-latest-bin cemu-bin rpcs3-bin
+paru -S --noconfirm waterfox-bin pcsx2-latest-bin cemu-bin rpcs3-bin wiiudownloader protonup-qt sunshine
 
 # oh-my-zsh install
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
