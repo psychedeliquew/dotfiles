@@ -9,10 +9,9 @@ PACKAGES=(
   wine wine-mono greetd-tuigreet fastfetch pavucontrol ufw \
   pipewire pipewire-pulse pipewire-alsa wireplumber libnotify \
   bluez bluez-utils blueman nvidia-open-dkms nvidia-utils \
-  lib32-nvidia-utils linux-headers swaybg xorg-xwayland \
+  lib32-nvidia-utils linux-headers swaybg xorg-xwayland thunar \
   noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-jetbrains-mono-nerd \
   gvfs thunar-volman exfatprogs xdg-desktop-portal qbittorrent firefox \
-  
 )
 
 sudo pacman -Syu --needed --noconfirm "${PACKAGES[@]}"
