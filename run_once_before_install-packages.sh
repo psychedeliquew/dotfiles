@@ -11,7 +11,8 @@ PACKAGES=(
   bluez bluez-utils blueman nvidia-open-dkms nvidia-utils \
   lib32-nvidia-utils linux-headers swaybg xorg-xwayland \
   noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-jetbrains-mono-nerd \
-  xdg-desktop-portal qbittorrent firefox
+  gvfs thunar-volman exfatprogs xdg-desktop-portal qbittorrent firefox \
+  
 )
 
 sudo pacman -Syu --needed --noconfirm "${PACKAGES[@]}"
