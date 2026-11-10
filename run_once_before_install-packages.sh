@@ -12,6 +12,7 @@ PACKAGES=(
   lib32-nvidia-utils linux-headers swaybg xorg-xwayland thunar \
   noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-jetbrains-mono-nerd \
   gvfs thunar-volman exfatprogs xdg-desktop-portal qbittorrent firefox \
+  jre-openjdk
 )
 
 sudo pacman -Syu --needed --noconfirm "${PACKAGES[@]}"
